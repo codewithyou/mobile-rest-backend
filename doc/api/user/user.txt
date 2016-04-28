@@ -1,0 +1,17 @@
+
+注册:
+POST /user/reg/common?Content-Type=application/json HTTP/1.1
+Host: 127.0.0.1:8080
+Content-Type: application/json
+Cache-Control: no-cache
+
+{ "username":"z2放2松放松的", "password":"zxy" }
+
+返回{"data":null,"errorCode":null,"message":"注册成功","success":true}
+
+
+登录:
+http://localhost:8080/user/auth/common/zxy/zxy
+
+返回
+{"data":{"createTime":1461845728535,"password":"aff57f65db2f2e775c209fd86d3b3f2e","salt":"268","username":"zxy"},"errorCode":null,"message":"登录成功","success":true}
